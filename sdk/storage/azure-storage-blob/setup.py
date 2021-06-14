@@ -70,7 +70,7 @@ setup(
     license='MIT License',
     author='Microsoft Corporation',
     author_email='ascl@microsoft.com',
-    url='https://github.com/Azure/azure-sdk-for-python/tree/master/sdk/storage/azure-storage-blob',
+    url='https://github.com/sendr/azure-sdk-for-python/tree/master/sdk/storage/azure-storage-blob',
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         'Programming Language :: Python',
@@ -99,7 +99,7 @@ setup(
         "cryptography>=2.1.4"
     ],
     extras_require={
-        ":python_version<'3.0'": ['futures', 'azure-storage-nspkg<4.0.0,>=3.0.0'],
+        ":python_version<'3.0'": ['futures', 'azure-storage-nspkg @ git+https://github.com/sendr/azure-storage-python.git@azure'],
         ":python_version<'3.4'": ['enum34>=1.0.4'],
         ":python_version<'3.5'": ["typing"]
     },
